@@ -1,2 +1,0 @@
-const body =document.body;
-body.onContentLoad = alert("Welcome to Homey Tradotainment!")
