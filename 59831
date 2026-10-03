@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homely Tradotaiment</title>
+  
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h1>Homely Tradotaiment Blog </h1>
+    <h3>Your favourite source of African Entertainments for Social Awareness</h3>
+    <navbar>
+      <a href="#">Home</a>  <a href="#">AboutUs</a>  <a href="#">Categories</a>  <a href="#">Resoures</a>
+      <span> <img src="/hero/idris_3.jpg" alt="author" id="author"> </span>
+      
+    </navbar>
+    <main>
+      
+    <p> This blog devourted in creating high quality sensorred and harmless public contents mainly in our African cultures and Traditions.
+    </p>
+    <div class= "images">
+    <img src="/hero/dancing.jpeg" alt="image" id="img1">
+    <figcaption> Crop Havesting Festival </figcaption>
+     <img src="/hero/swimming.jpeg" alt="image2 id="img2">
+     <figcaption> Annual Fishing Competition </figcaption>
+     <img src="/hero/wield.jpeg" alt="image2 id="img3">
+     <figcaption> Entertaiment with Wield Animals </figcaption>
+    </div>
+
+    
+    
+    
+  </main>
+  <footer> © Copyright 2026</footer>
+
+  <!-- Link to your external JavaScript file -->
+  <script src="script.js" defer></script>
+</body>
+</html>
