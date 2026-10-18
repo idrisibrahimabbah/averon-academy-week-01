@@ -1,19 +1,29 @@
 * {
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
+
 }
-body{
- height: 110vh;
+
+body {
+ 
+       height: 110vh;
+
  width: 100vw;
+
  background-color: rgba(250,100,25,0.3);
+
  color: white;
- text-align: center;
+ 
+text-align: center;
+
 }
 
 
 .app-container{
   min-height: 95%;
+
   width: 100%;
 
   	background-color: rgba(250,150,60, 0.5);
@@ -32,8 +42,10 @@ body{
 
 
 .dark-mode{
- background-color: rgba(120,0,20, 0.5);
-  color: whitesmoke;
+ 
+	font-family: sans-serif;
+	background-color: rgba(120,0,20, 0.5);
+  color: lightgrey;
   min-height: 95%;
   width: 100%;
   display: flex;
@@ -43,6 +55,7 @@ body{
   align-items: center;
 }
 
+
 button{
   height: 45px;
   width: 150px;
@@ -50,7 +63,7 @@ button{
   font-weight: 600;
   background-color: #2229;
   border-radius: 10px;
-  color: white;
+  color: cyan;
   border: 1px solid transparent
 }
 
