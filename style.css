@@ -11,19 +11,28 @@ body{
  text-align: center;
 }
 
+
 .app-container{
   min-height: 95%;
   width: 100%;
-  background-color: rgba(250,150,60, 0.5);
-  display: flex;
-  gap:15px;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
+
+  	background-color: rgba(250,150,60, 0.5);
+  
+	display: flex;
+
+	gap:15px;
+  
+	flex-direction:column;
+  
+	justify-content: center;
+
+	align-items: center;
 }
 
+
+
 .dark-mode{
-  background-color: rgba(120,0,20, 0.5);
+ background-color: rgba(120,0,20, 0.5);
   color: whitesmoke;
   min-height: 95%;
   width: 100%;
