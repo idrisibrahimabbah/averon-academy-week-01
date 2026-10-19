@@ -2,7 +2,6 @@
   margin: 0;
 
   padding: 0;
-  box-sizing: border-box;
 
 }
 
@@ -12,8 +11,7 @@ body {
 
  width: 100vw;
 
- background-color: rgba(250,100,25,0.3);
-
+ background-color: turquoise/* rgba(250,100,25,0.3)*/;
  color: white;
  
 text-align: center;
@@ -26,7 +24,7 @@ text-align: center;
 
   width: 100%;
 
-  	background-color: rgba(250,150,60, 0.5);
+  	background-color: hsla(28, 86%, 33%, 0.5);
   
 	display: flex;
 
@@ -61,12 +59,15 @@ button{
   width: 150px;
   font-size: 20px;
   font-weight: 600;
-  background-color: #2229;
+  background-color: #0a0725;
   border-radius: 10px;
   color: cyan;
   border: 1px solid transparent
 }
 
+#greet-btn {
+  width: 310px;
+}
 #time-display, #greeting-display{
   display: flex;
   justify-content: center;
@@ -91,10 +92,17 @@ input {
   text-align: center;
   background-color: #2222;
   border: 1px solid transparent;
+  padding: 
 }
+
+input[type="textbox"]::placeholder{ color:#eedc3a22;
+}
+
 h1 {
   text-align: center;
   position: relative;
   top: -50px;
 }
-
+h3{
+  width: 100%;
+}
