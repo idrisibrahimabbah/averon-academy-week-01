@@ -34,29 +34,34 @@ function greetUser(name) {
 
   if (!username == "" && hour <= 12) {
     greetDisplay.innerText = `Good morning ${username}, Welcome to Greeting Master App.`;
-
     userInput.value = "";
-  } else if (!username == "" && hour <= 14) {
+  }
+
+   else if (!username == "" && hour <= 14) {
     greetDisplay.innerText = `Good afternoon ${username}, Welcome to Greeting Master App.`;
-
     userInput.value = "";
-  } else if (!username == "" && hour > 14) {
+  }
+  
+  else if (!username == "" && hour > 14) {
     greetDisplay.innerText = `Good evening ${username}, Welcome to Greeting Master App.`;
     userInput.value = "";
-  } else {
+  }
+    
+  else {
     greetDisplay.innerText = "Invalid Name";
+    greetDisplay.style.color = "red";
     userInput.value = "";
   }
 }
-
 greetBtn.addEventListener("click", greetUser);
 
 function toggleTheme() {
   if (!appContainer === false) {
-    //appContainer.classList.remove("app-container");
-
     appContainer.classList.toggle("dark-mode");
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach((button) => { button.style.backgroundColor = "teal";
+
+    })
   }
 }
-
 toggleBtn.addEventListener("click", toggleTheme);

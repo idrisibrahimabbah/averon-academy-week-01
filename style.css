@@ -77,9 +77,9 @@ button{
   border: 1px solid transparent
   border-radius: 10px;
   background-color: #2222;
-  font: sans-serif bold
+  font-family: sans-serif;
   margin-bottom: 10px;
-  overflow: hidden;
+  over-flow: hidden;
   border-radius: 10px;
   box-shadow: 2px 3px 8px grey;
   margin-bottom: 15px;
@@ -92,11 +92,17 @@ input {
   text-align: center;
   background-color: #2222;
   border: 1px solid transparent;
-  padding: 
+  padding: 10px;
 }
 
-input[type="textbox"]::placeholder{ color:#eedc3a22;
+h3 {
+  width: 100%;
+  padding: 0 10px 0 10px ;
 }
+
+input[type="text"]::placeholder{ color:#eedc3a22;
+}
+
 
 h1 {
   text-align: center;
