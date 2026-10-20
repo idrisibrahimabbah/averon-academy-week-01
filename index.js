@@ -34,21 +34,25 @@ function greetUser(name) {
   if (!username == "" && hour <= 12) {
     greetDisplay.innerText = `Good morning ${username}, Welcome to Greeting Master App.`;
     userInput.value = "";
+    greetDisplay.style = 'color: white';
   }
 
    else if (!username == "" && hour <= 14) {
     greetDisplay.innerText = `Good afternoon ${username}, Welcome to Greeting Master App.`;
     userInput.value = "";
+    greetDisplay.style = 'color: white';
   }
   
   else if (!username == "" && hour > 14) {
     greetDisplay.innerText = `Good evening ${username}, Welcome to Greeting Master App.`;
     userInput.value = "";
+    greetDisplay.style = 'color: white';
   }
     
   else {
     greetDisplay.innerText = "Invalid Name";
     userInput.value = "";
+    greetDisplay.style = 'color: red';
   }
 }
 greetBtn.addEventListener("click", greetUser);
