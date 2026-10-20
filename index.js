@@ -12,7 +12,6 @@ const greetBtn = document.getElementById("greet-btn");
 
 const toggleBtn = document.querySelector("#bg-toggle");
 
-//showTimeBtn.addEventListener("click", showTime);
 
 let currDate = new Date();
 
@@ -49,7 +48,6 @@ function greetUser(name) {
     
   else {
     greetDisplay.innerText = "Invalid Name";
-    greetDisplay.style.color = "red";
     userInput.value = "";
   }
 }
