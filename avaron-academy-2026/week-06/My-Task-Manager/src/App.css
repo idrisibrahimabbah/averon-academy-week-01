@@ -1,0 +1,46 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color:azure;
+}
+
+h1 {
+  color: teal;
+}
+
+.todo-container {
+  background: white;
+  box-shadow: 0 4px 1px rgba(0,0,0,0.1);
+  color:teal;
+}
+
+button {
+background: teal;
+color: white;
+height: 30px;
+padding: 20px;
+text-align: center;
+border-radius: 5px;
+
+} 
+
+button:hover {
+  opacity: 0.84;
+  background: turquoise;
+  transition: 2s;
+}
+
+input {
+  
+  height: 30px;
+  border-radius: 5px; 
+  padding: 20px;
+  margin-right: 10px;
+}

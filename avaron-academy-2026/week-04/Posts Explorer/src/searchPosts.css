@@ -1,0 +1,229 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light Theme */
+:root {
+    --bg: azure;
+    --card: whitesmoke;
+    --text: teal;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --primary: darkturquoise;
+    --primary-hover: turquoise;
+}
+
+/* Dark Theme */
+body.dark {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --border: #334155;
+    --primary: teal;
+    --primary-hover:turquoise;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 25px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: var(--muted);
+}
+
+/* Buttons */
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--primary-hover);
+    transition: 2s;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Theme Button */
+.theme-btn {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+/* Search and Controls */
+.controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.controls input,
+.controls select {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+}
+
+.controls input:focus,
+.controls select:focus {
+    border-color: var(--primary);
+}
+
+/* Status Message */
+#statusMessage {
+    color: var(--muted);
+    margin: 20px 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.error {
+    color: #dc2626 !important;
+}
+
+/* Posts Information */
+.posts-info {
+    margin: 20px 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Posts Grid */
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Individual Post Card */
+.post-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.post-card h2 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.post-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.post-meta {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    color: var(--primary);
+    font-size: 12px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#loadMoreBtn {
+    min-width: 180px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .posts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .controls input,
+    .controls select,
+    .controls button {
+        width: 100%;
+    }
+
+    .posts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .post-card {
+        padding: 17px;
+    }
+}
